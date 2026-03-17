@@ -1,0 +1,35 @@
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="section-number">02.</span>
+      Projects & Key Achievements
+    </h2>
+
+    <div class="projects-grid">
+      <div *ngFor="let project of projects" class="project-card">
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <span *ngIf="project.company" class="project-company">{{ project.company }}</span>
+          </div>
+          
+          <p class="project-description">{{ project.description }}</p>
+          
+          <p *ngIf="project.impact" class="project-impact">
+            <i class="fas fa-chart-line"></i> {{ project.impact }}
+          </p>
+          
+          <ul class="project-tech">
+            <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+          </ul>
+
+          <div class="project-links">
+            <a [href]="project.github" target="_blank" rel="noopener" class="icon-link">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

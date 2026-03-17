@@ -1,0 +1,126 @@
+.projects-section {
+  padding: 6rem 2rem;
+  background: #020c1b;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ccd6f6;
+  margin-bottom: 3rem;
+
+  .section-number {
+    color: #64ffda;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    font-family: 'Courier New', monospace;
+  }
+
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(136, 146, 176, 0.3);
+    margin-left: 2rem;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #112240;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 40px rgba(100, 255, 218, 0.2);
+    border-color: rgba(100, 255, 218, 0.3);
+  }
+}
+
+.project-content {
+  padding: 1.5rem;
+
+  .project-header {
+    margin-bottom: 0.75rem;
+
+    .project-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ccd6f6;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-company {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: #64ffda;
+      background: rgba(100, 255, 218, 0.1);
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .project-description {
+    color: #8892b0;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .project-impact {
+    color: #64ffda;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+
+    li {
+      font-size: 0.8rem;
+      color: #64ffda;
+      padding: 0.35rem 0.7rem;
+      background: rgba(100, 255, 218, 0.1);
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+    }
+  }
+
+  .project-links {
+    margin-top: 1rem;
+
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #64ffda;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateX(5px);
+      }
+    }
+  }
+}
