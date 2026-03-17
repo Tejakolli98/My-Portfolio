@@ -2,11 +2,10 @@
 
 A modern, dark-themed portfolio built with Angular showcasing my frontend development skills.
 
-![Portfolio Preview](./preview.png)
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://your-username.github.io/portfolio)
+[View Live Portfolio](https://github.com/Tejakolli98/My-Portfolio)
 
 ## 💻 Tech Stack
 
